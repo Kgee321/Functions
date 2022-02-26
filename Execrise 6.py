@@ -10,4 +10,3 @@ def number_in_list(list1, multiple):
 list_of_numbers = input("Put in your list of numbers: ").split()
 number = int(input("Enter a number: "))
 print(f"{number_in_list(list_of_numbers, number)} are factors of {number}")
-
