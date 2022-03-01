@@ -3,7 +3,6 @@ def print_name(name, number):
         print(name)
 
 
-
 what_is_name = input("What is your name: ")
 what_is_number = int(input("Enter a number: "))
 
