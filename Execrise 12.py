@@ -33,19 +33,20 @@ S for Student, or
 C for Child, or 
 G for Gift voucher
 """).upper()
-    confirm = input(f"Confirm purchase of {ticket} ticket? (Y/N) ").lower()
+    number = int(input(f"How many {ticket} ticket's do you want to buy? "))
+    confirm = input(f"Confirm purchase of {number} {ticket} ticket/s? (Y/N) ").lower()
     if confirm == "y":
         if ticket == "A":
-            total += 12.5
-            adult += 1
+            total += 12.5 * number
+            adult += number
         if ticket == "S":
-            total += 9
-            student += 1
+            total += 9 * number
+            student += number
         if ticket == "C":
-            total += 7
-            child += 1
+            total += 7 * number
+            child += number
         if ticket == "G":
-            gift += 1
+            gift += number
     print()
     yes_or_no = input("Do you want to buy another ticket? (Y/N) ").lower()
 
